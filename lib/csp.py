@@ -31,9 +31,9 @@ def generate_basic_solution(time_slots, rooms, courses, groups, teachers):
 
 def finder_step(solution: dict, undef_var: set, var_heuristic: Callable, value_heuristic: Callable, level=0):
     """Step in the algorithm solution tree."""
-    print(level)
+    #print(level)
     if undef_var == set():
-        print("The end!")
+        #print("The end!")
         return solution
     var = var_heuristic(solution, undef_var)
     list_of_values = value_heuristic(var, solution, undef_var)

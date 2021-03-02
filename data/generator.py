@@ -27,10 +27,8 @@ def data_generator_courses():
 
 
 def data_generator_teachers(courses):
-    names = ["Green", "Brown", "Wood", "Steal", "Water", "Fire", "Yellow",
-             "Smith", "Pit", "Blume","Sting", "Treenson", "Patinson", "Rocket", "Tetcher",
-             "Biber", "Kepler", "Jobs", "Ground", "Leaf"]
-    density = [4, 5]
+    names = ["Green", "Brown", "Wood", "Steal", "Water"]
+    density = [2, 3]
     teachers = []
     for i in range(len(names)):
         teachers.append({
@@ -48,8 +46,7 @@ def data_generator_teachers(courses):
 
 
 def data_generator_groups(courses):
-    names = ["K-10", "K-11", "K-12", "K-13", "K-14", "K-15", "K-16", "K-17", "K-18", "K-19", "K-20", "K-21", "K-22",
-             "K-23", "K-24", "K-25", "K-26", "K-27", "K-28"]
+    names = ["K-10", "K-11", "K-12", "K-13", "K-14"]
     students_range = [25, 30]
     courses_quantity = [4, 6]
     groups = []
@@ -66,7 +63,7 @@ def data_generator_groups(courses):
     return groups
 
 
-def data_generator_rooms(init=[30, 30, 30, 40, 50, 60, 50, 50, 50, 60]):
+def data_generator_rooms(init=[30, 30, 30, 40, 50, 60]):
     rooms = []
     if init:
         for r_id in range(len(init)):
